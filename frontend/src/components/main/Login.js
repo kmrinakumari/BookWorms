@@ -52,16 +52,14 @@ const Login = () => {
       className="col-md-6 mx-auto pt-5">
       <div className="card">
         <div className="card-body">
-          <h3 className="text-center">Signup Here</h3>
-          <Formik initialValues={{ username: "", email: "", password: "" }} onSubmit={userSubmit} validationSchema={myValidation}>
+          <h3 className="text-center">Login</h3>
+          <Formik initialValues={{ email: "", password: "" }} onSubmit={userSubmit} validationSchema={myValidation}>
             {({ values, handleChange, handleSubmit, isSubmitting, errors }) => (
               <form onSubmit={handleSubmit}>
-                <label>Username</label>
-                <input type="text" className="form-control" name="username" value={values.username} onChange={handleChange} />
-                <p className="mb-3 message">{errors.username}</p>
 
                 <label>Email</label>
                 <input type="text" className="form-control" name="email" value={values.email} onChange={handleChange} />
+                <p className="mb-3 message">{errors.email}</p>
 
                 <label>Password</label>
                 <input type="password" className="form-control" name="password" value={values.password} onChange={handleChange} />

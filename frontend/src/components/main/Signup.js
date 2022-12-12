@@ -72,6 +72,8 @@ const Signup = () => {
 
                 <label>Email</label>
                 <input type="text" className="form-control" name="email" value={values.email} onChange={handleChange} />
+                <p className="mb-3 message">{errors.email}</p>
+
 
                 <label>Password</label>
                 <input type="password" className="form-control" name="password" value={values.password} onChange={handleChange} />
