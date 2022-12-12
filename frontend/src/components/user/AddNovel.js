@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 
-const Signup = () => {
+const AddNovel = () => {
   
   
   // step-1 : create function for submission
@@ -60,19 +60,32 @@ const Signup = () => {
       <div className="card">
         <div className="card-body">
           <h3 className="text-center">Signup Here</h3>
-          <Formik initialValues={{ username: "", email: "", password: "" }} onSubmit={userSubmit} validationSchema={myValidation}>
+          <Formik initialValues={{ title:"",author:"",genre:"",publisher:"",user:"",rentable:"",sellable:"",rentPrice:"",sellPrice:"",createAt:"" }} onSubmit={userSubmit} >
             {({ values, handleChange, handleSubmit, isSubmitting, errors }) => (
               <form onSubmit={handleSubmit}>
-                <label>Username</label>
-                <input type="text" className="form-control" name="username" value={values.username} onChange={handleChange} />
-                <p className="mb-3 message">{errors.username}</p>
 
-                <label>Email</label>
-                <input type="text" className="form-control" name="email" value={values.email} onChange={handleChange} />
-
-                <label>Password</label>
-                <input type="password" className="form-control" name="password" value={values.password} onChange={handleChange} />
-
+                <label>Title</label>
+                <input type="text" className="form-control" name="title" value={values.title} onChange={handleChange} />
+                <p className="mb-3 message">{errors.title}</p>
+                <label>Author</label>
+                <input type="text" className="form-control" name="author" value={values.author} onChange={handleChange} />
+                <label>Genre</label>
+                <input type="text" className="form-control" name="genre" value={values.genre} onChange={handleChange} />
+                <label>Publisher</label>
+                <input type="text" className="form-control" name="publisher" value={values.publisher} onChange={handleChange} />
+                <label>User</label>
+                <input type="text" className="form-control" name="user" value={values.user} onChange={handleChange} />
+                <label>Rentable</label>
+                <input type="text" className="form-control" name="rentable" value={values.rentable} onChange={handleChange} />
+                <label>Sellable</label>
+                <input type="text" className="form-control" name="sellable" value={values.sellable} onChange={handleChange} />
+                <label>RentPrice</label>
+                <input type="text" className="form-control" name="rentprice" value={values.rentPrice} onChange={handleChange} />
+                <label>SellPrice</label>
+                <input type="text" className="form-control" name="sellprice" value={values.sellPrice} onChange={handleChange} />
+                <label>CreateAt</label>
+                <input type="text" className="form-control" name="createat" value={values.createAt} onChange={handleChange} />
+                
                 <button disabled={isSubmitting} type="submit" className="btn btn-primary mt-5">
                   {isSubmitting ? <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> : ""}
                   &nbsp;&nbsp;Submit
@@ -86,4 +99,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default AddNovel;
