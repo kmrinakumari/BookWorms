@@ -3,9 +3,11 @@ import React from "react";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  
+
+  const navigate = useNavigate();
   
   // step-1 : create function for submission
   const userSubmit = async (formdata, { resetForm, setSubmitting }) => {
@@ -44,6 +46,7 @@ const Signup = () => {
 
       setSubmitting(false)
       resetForm()
+      navigate('/main/login');
     // }, 2000)
   }
 
