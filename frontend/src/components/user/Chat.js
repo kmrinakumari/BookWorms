@@ -26,7 +26,7 @@ const Chat = () => {
   return (
     
       <div className="container">
-        <h1 className="text-center">My Chat App</h1>
+        <h1 className="text-center">Chat</h1>
         <div className="msg-area">{displayMessages()}</div>
 
         <div className="input-group mt-4">
