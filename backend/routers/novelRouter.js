@@ -1,7 +1,7 @@
 // to perform database operations on the user data
 const express = require('express');
 const router = express.Router();
-const Model = require('../models/userModel');
+const Model = require('../models/novelModel');
 
 router.post('/add', (req, res) => {
     console.log(req.body);

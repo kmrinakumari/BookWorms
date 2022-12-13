@@ -9,6 +9,8 @@ import User from './components/user';
 import AdminProfile from './components/admin/Profile';
 import UserProfile from './components/user/Profile';
 import Home from './components/main/Home';
+import ManageUser from './components/admin/ManageUser';
+import AddNovel from './components/user/AddNovel';
 
 function App() {
   return (
@@ -25,11 +27,13 @@ function App() {
           
           <Route element={<Admin />} path="admin">
             <Route path="pofile" element={<AdminProfile />} />
+            <Route path="manageuser" element={<ManageUser />} />
           
           </Route>
           
           <Route element={<User />} path="user">
             <Route path="pofile" element={<UserProfile />} />
+            <Route path="addnovel" element={<AddNovel />} />
           
           </Route>
 

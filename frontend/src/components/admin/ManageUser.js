@@ -6,6 +6,8 @@ const ManageUser = () => {
     
     const [userData, setUserData] = useState([]);
 
+
+    // getting saved user data from backend
     const getData = async () => {
         const response = await fetch('http://localhost:5000/user/getall');
         if(response.status === 200){
@@ -17,12 +19,15 @@ const ManageUser = () => {
         }
     }
 
+    // calling the above function
     useEffect(() => {
       
         getData();
 
     }, [])
 
+
+    // to delete user from database
     const deleteUser = async (id) => {
         console.log(id);
         const response = await fetch('http://localhost:5000/user/delete/'+id, {
@@ -40,6 +45,7 @@ const ManageUser = () => {
     }
 
 
+    // to display users data on screen
     const displayUsers = () => {
         return (
             <table className='table'>
@@ -48,7 +54,7 @@ const ManageUser = () => {
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Age</th>
+                        <th>Password</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,7 +64,7 @@ const ManageUser = () => {
                                 <td>{user._id}</td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
-                                <td>{user.age}</td>
+                                <td>{user.password}</td>
                                 <td>
                                     <button onClick={() => { deleteUser(user._id) }} className='btn btn-danger'> <i class="fas fa-trash"></i> </button>
                                 </td>
