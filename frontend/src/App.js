@@ -11,6 +11,7 @@ import UserProfile from './components/user/Profile';
 import Home from './components/main/Home';
 import ManageUser from './components/admin/ManageUser';
 import AddNovel from './components/user/AddNovel';
+import Chat from './components/user/Chat';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route element={<User />} path="user">
             <Route path="pofile" element={<UserProfile />} />
             <Route path="addnovel" element={<AddNovel />} />
+            <Route path="chat" element={<Chat />} />
           
           </Route>
 

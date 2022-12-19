@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion"
 import React, { useState } from "react"
-import "./chat.css"
 
 const Chat = () => {
   const [messageList, setMessageList] = useState(["Hi", "Hello", "Nice", "See You"])
