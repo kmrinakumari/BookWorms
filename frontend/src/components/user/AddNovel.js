@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
+import app_config from "../../config";
 
 const AddNovel = () => {
+  const url = app_config.apiurl;
+  const [selImage, setSelImage] = useState("");
   const genreOptions = ["Fiction", "Non-Fiction"];
 
   const [currentUser, setCurrentUser] = useState(
@@ -56,7 +59,20 @@ const AddNovel = () => {
       .required("Username Required"),
   });
 
-  
+  const uploadFile = (e) => {
+    const file = e.target.files[0];
+    setSelImage(file.name);
+    const fd = new FormData();
+    fd.append("myfile", file);
+    fetch(url + "/util/uploadfile", {
+      method: "POST",
+      body: fd,
+    }).then((res) => {
+      if (res.status === 200) {
+        console.log("file uploaded");
+      }
+    });
+  };
 
 
   return (
@@ -162,6 +178,9 @@ const AddNovel = () => {
                   value={values.sellPrice}
                   onChange={handleChange}
                 />
+
+                <label className="mt-4 btn btn-dark" htmlFor="thumbnail">Upload Novel Image</label>
+                <input hidden id="thumbnail" type="file" onChange={uploadFile} />
 
                 <button
                   disabled={isSubmitting}
