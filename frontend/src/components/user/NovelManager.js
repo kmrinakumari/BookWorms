@@ -30,7 +30,7 @@ const NovelManager = () => {
     // to delete user from database
     const deleteUser = async (id) => {
         console.log(id);
-        const response = await fetch('http://localhost:5000/user/delete/'+id, {
+        const response = await fetch('http://localhost:5000/novel/delete/'+id, {
             method: 'DELETE'
         })
 
