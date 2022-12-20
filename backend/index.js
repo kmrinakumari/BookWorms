@@ -2,6 +2,7 @@
 const express = require('express');
 const userRouter = require('./routers/userRouter');
 const novelRouter = require('./routers/novelRouter');
+const utilRouter = require('./routers/util');
 const cors = require('cors');
 
 // initializing express
@@ -14,6 +15,9 @@ app.use(cors({ origin : 'http://localhost:3000' }));
 app.use(express.json());
 app.use('/user', userRouter);
 app.use('/novel', novelRouter);
+app.use('/util', utilRouter);
+
+app.use(express.static('./static/uploads'));
 
 // creating a route or endpoint
 app.get('/', (req, res) => {
