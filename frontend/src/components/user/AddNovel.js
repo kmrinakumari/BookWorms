@@ -17,7 +17,7 @@ const AddNovel = () => {
   // step-1 : create function for submission
   const userSubmit = async (formdata, { resetForm, setSubmitting }) => {
     setSubmitting(true);
-
+    formdata.image =selImage;
     // setTimeout(() => {
     console.log(formdata);
 

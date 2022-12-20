@@ -48,6 +48,11 @@ const Header = () => {
                   Login
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/main/browse">
+                  Browse
+                </NavLink>
+              </li>
             </ul>
             {/* Left links */}
           </div>

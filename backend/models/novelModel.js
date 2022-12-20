@@ -10,6 +10,7 @@ const userSchema = new Schema({
     sellable : Boolean,
     rentPrice : Number,
     sellPrice : Number,
+    image : String,
     createAt : Date
 })
 
