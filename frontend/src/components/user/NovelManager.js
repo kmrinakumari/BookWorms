@@ -27,8 +27,8 @@ const NovelManager = () => {
     }, [])
 
 
-    // to delete user from database
-    const deleteUser = async (id) => {
+    // to delete novel from database
+    const deleteNovel = async (id) => {
         console.log(id);
         const response = await fetch('http://localhost:5000/novel/delete/'+id, {
             method: 'DELETE'
@@ -37,7 +37,7 @@ const NovelManager = () => {
         if(response.status === 200){
             Swal.fire({
                 icon : 'success',
-                text: 'User Deleted!!'
+                text: 'Novel Deleted!!'
             })
 
             getData();
@@ -66,7 +66,7 @@ const NovelManager = () => {
                                 <td>{novel.email}</td>
                                 <td>{novel.password}</td>
                                 <td>
-                                    <button onClick={() => { deleteUser(novel._id) }} className='btn btn-danger'> <i class="fas fa-trash"></i> </button>
+                                    <button onClick={() => { deleteNovel(novel._id) }} className='btn btn-danger'> <i class="fas fa-trash"></i> </button>
                                 </td>
                             </tr>
                         ))
@@ -79,7 +79,7 @@ const NovelManager = () => {
 
   return (
     <div className='container'>
-        <h1 className='text-center mb-5'>ManageUser</h1>
+        <h1 className='text-center mb-5'>NovelManager</h1>
         {displayNovels()}
     </div>
   )
