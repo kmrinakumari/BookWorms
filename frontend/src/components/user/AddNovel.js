@@ -181,7 +181,7 @@ const AddNovel = () => {
 
                 <label className="mt-4 btn btn-dark" htmlFor="thumbnail">Upload Novel Image</label>
                 <input hidden id="thumbnail" type="file" onChange={uploadFile} />
-
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button
                   disabled={isSubmitting}
                   type="submit"
