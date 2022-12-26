@@ -6,7 +6,6 @@ const ManageUser = () => {
     
     const [userData, setUserData] = useState([]);
 
-
     // getting saved user data from backend
     const getData = async () => {
         const response = await fetch('http://localhost:5000/user/getall');
@@ -21,9 +20,7 @@ const ManageUser = () => {
 
     // calling the above function
     useEffect(() => {
-      
         getData();
-
     }, [])
 
 
