@@ -48,8 +48,8 @@ const Home = () => {
                     {" "}
                     <h1 className="display-3 fw-bold ls-tight mb-4">
                       {" "}
-                      <span>The best offer on the market</span> <br />{" "}
-                      <span className="text-primary">for your business</span>{" "}
+                      <span>The best offer on the Bookworms</span> <br />{" "}
+                      <span className="text-primary">for your favourite Novel</span>{" "}
                     </h1>{" "}
                     <a
                       className="btn  btn-primary btn-lg py-3 px-5 mb-2 mb-md-0 me-md-2"
@@ -117,7 +117,7 @@ const Home = () => {
                       aria-controls="#picker-editor"
                     />{" "}
                   </div>{" "}
-                  <h5 className="fw-bold mb-3">Safe and solid</h5>{" "}
+                  <h5 className="fw-bold mb-3">Purchase and Excahnge</h5>{" "}
                   <p className="text-muted mb-0">
                     Eum nostrum fugit numquam, voluptates veniam neque quibusdam
                     ullam aspernatur odio soluta, quisquam dolore animi mollitia
@@ -231,7 +231,7 @@ const Home = () => {
                           <p>
                             {" "}
                             <i className="fas fa-check-circle text-success me-2" />
-                            <span>Mobile</span>{" "}
+                            <span>Novel</span>{" "}
                           </p>{" "}
                         </div>{" "}
                       </div>{" "}
@@ -378,7 +378,7 @@ const Home = () => {
                     />{" "}
                   </div>{" "}
                   <h5 className="mb-3">John Smith</h5>{" "}
-                  <h6 className="text-primary mb-3">Marketing Specialist</h6>{" "}
+                  <h6 className="text-primary mb-3">Novel Lover</h6>{" "}
                   <p className="px-xl-3">
                     {" "}
                     <i className="fas fa-quote-left pe-2" />
