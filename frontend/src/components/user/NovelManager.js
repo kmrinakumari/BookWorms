@@ -9,7 +9,7 @@ const NovelManager = () => {
 
     // getting saved user data from backend
     const getData = async () => {
-        const response = await fetch('http://localhost:5000/user/getall');
+        const response = await fetch('http://localhost:5000/novel/getall');
         if(response.status === 200){
             const data = await response.json();
             console.log(data);
