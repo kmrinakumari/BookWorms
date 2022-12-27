@@ -59,7 +59,8 @@ const Signup = () => {
       initial={{ scale: 0.6, x: "800%", opacity: 0 }}
       animate={{ scale: 1, x: 0, opacity: 1 }}
       transition={{ duration: 0.5, type: "spring" }}
-      className="col-md-6 mx-auto pt-5">
+      className="signup-bg">
+        <div className="col-md-6 mx-auto pt-5">
       <div className="card">
         <div className="card-body">
           <h3 className="text-center">Signup Here</h3>
@@ -86,6 +87,7 @@ const Signup = () => {
             )}
           </Formik>
         </div>
+      </div>
       </div>
     </motion.div>
   )

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import app_config from '../../config';
 
@@ -56,6 +57,7 @@ const ListNovel = () => {
                         <img className='card-img-top' src={url+"/"+ novel.image } alt="" />
                         <div className="card-body">
                             <h3>{novel.title}</h3>
+                            <Link className='btn btn-link' to={'/view/'+novel._id}>View More</Link>
                         </div>
                     </div>
                 </div>

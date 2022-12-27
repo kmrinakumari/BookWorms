@@ -14,6 +14,7 @@ import AddNovel from './components/user/AddNovel';
 import Chat from './components/user/Chat';
 import ListNovel from './components/main/ListNovel';
 import NovelManager from './components/user/NovelManager';
+import ViewNovel from './components/main/ViewNovel';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="signup" element={<Signup />} />
             <Route path="home" element={<Home />} />
             <Route path="browse" element={<ListNovel />} />
+            <Route path="view/:id" element={<ViewNovel />} />
           </Route>
           
           <Route element={<Admin />} path="admin">
