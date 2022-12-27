@@ -75,9 +75,12 @@ const ManageUser = () => {
     
 
   return (
+    className="manageuser-bg">
+    <div className="col-md-6 mx-auto pt-5">
     <div className='container'>
         <h1 className='text-center mb-5'>ManageUser</h1>
         {displayUsers()}
+    </div>
     </div>
   )
 }
