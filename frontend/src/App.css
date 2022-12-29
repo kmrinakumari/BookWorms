@@ -9,7 +9,7 @@
 }
 .login-bg{
   background-image: url('../public/main/login_bg.jpg');
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
 }
 .manageuser-bg{
@@ -19,7 +19,7 @@
 }
 .addnovel-bg{
   background-image: url('../public/main/addnovel_bg.jpg');
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
 }
 .novelmanager-bg{
