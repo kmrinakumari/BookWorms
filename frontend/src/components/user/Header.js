@@ -25,9 +25,9 @@ const Header = () => {
             {/* Navbar brand */}
             <a className="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                height={15}
-                alt="MDB Logo"
+                src="https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg"
+                height={30}
+                alt="Book Logo"
                 loading="lazy"
               />
             </a>
@@ -46,6 +46,11 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/main/login">
                   Login
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/main/browse">
+                  Browse
                 </NavLink>
               </li>
             </ul>
@@ -107,7 +112,7 @@ const Header = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                   className="rounded-circle"
-                  height={25}
+                  height={30}
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
