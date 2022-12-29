@@ -42,7 +42,6 @@ function App() {
             <Route path="addnovel" element={<AddNovel />} />
             <Route path="managenovel" element={<NovelManager />} />
             <Route path="chat" element={<Chat />} />
-          
           </Route>
 
           
