@@ -28,9 +28,9 @@ router.get('/getall', (req, res) => {
 });
 
 // : denotes url paramter
-router.get('/getbyemail/:email', (req, res) => {
+router.get('/getbyid/:id', (req, res) => {
 
-    Model.find({email : req.params.email })
+    Model.findById(req.params.id)
     .then((result) => {
         res.json(result);
     })
