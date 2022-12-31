@@ -5,7 +5,8 @@ const Header = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light" 
+      >
         {/* Container wrapper */}
         <div className="container-fluid">
           {/* Toggle button */}
@@ -113,7 +114,7 @@ const Header = () => {
                   src="profile_bg.jpg"
                   className="rounded-circle"
                   height={30}
-                  alt="Black and White Portrait of a person"
+                  alt="Portrait of a person"
                   loading="lazy"
                 />
               </a>

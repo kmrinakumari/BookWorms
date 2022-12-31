@@ -12,9 +12,14 @@
   height: 100vh;
   background-size: cover;
 }
+.novelmanager-bg{
+  background-image: url('../public/main/novelmanager_bg.jpg');
+  height: 300vh;
+  background-size: cover;
+}
 .manageuser-bg{
   background-image: url('../public/main/manageuser_bg.webp');
-  height: 100vh;
+  height: 150vh;
   background-size: cover;
 }
 .addnovel-bg{
@@ -22,10 +27,7 @@
   height: 100vh;
   background-size: cover;
 }
-.novelmanager-bg{
-  background-image: url('../public/main/novelmanager_bg.jpg');
-  height: 100vh;
-  background-size: cover;
-}
+
+
 
 

@@ -24,8 +24,16 @@ const ViewNovel = () => {
   const displayNovelData = () => {
     if(!loading && novelData){
       return <div className="container">
-        {novelData.title}
-      </div>
+          <div className="row">
+           <div className="col">
+           <div className="card">
+         <div className="card-body ">
+               {novelData.title}
+           </div>
+          </div>
+         </div>
+        </div>
+        </div>
     }
   }
   

@@ -46,18 +46,20 @@ const ManageUser = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Password</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Publisher</th>
           </tr>
         </thead>
         <tbody>
           {userData.map((user) => (
             <tr>
               <td>{user._id}</td>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.password}</td>
+              <td>{user.title}</td>
+              <td>{user.author}</td>
+              <td>{user.genre}</td>
+              <td>{user.publisher}</td>
               <td>
                 <button
                   onClick={() => {

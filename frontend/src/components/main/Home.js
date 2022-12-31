@@ -24,7 +24,7 @@ const Home = () => {
                 className="p-5 text-center bg-image"
                 style={{
                   backgroundImage:
-                    'url("https://mdbootstrap.com/img/new/textures/full/142.jpg")',
+                    'url("background_bg.webp")',
                   height: 500,
                   backgroundSize: "cover",
                   backgroundPosition: "50% 50%",
@@ -168,8 +168,8 @@ const Home = () => {
                   <div className="col-lg-4 d-none d-lg-flex">
                     {" "}
                     <img
-                      src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg"
-                      alt="Trendy Pants and Shoes"
+                      src="background2_bg.jpg"
+                      alt=" "
                       className="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5"
                       aria-controls="#picker-editor"
                     />{" "}
