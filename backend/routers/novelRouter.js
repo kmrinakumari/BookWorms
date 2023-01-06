@@ -30,7 +30,7 @@ router.get('/getall', (req, res) => {
 // : denotes url paramter
 router.get('/getbyid/:id', (req, res) => {
 
-    Model.findById(req.params.id)
+    Model.findById(req.params.id).populate('user')
     .then((result) => {
         res.json(result);
     })

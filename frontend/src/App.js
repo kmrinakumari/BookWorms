@@ -15,6 +15,7 @@ import Chat from './components/user/Chat';
 import ListNovel from './components/main/ListNovel';
 import NovelManager from './components/user/NovelManager';
 import ViewNovel from './components/main/ViewNovel';
+import CheckOut from './components/user/CheckOut';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="pofile" element={<UserProfile />} />
             <Route path="addnovel" element={<AddNovel />} />
             <Route path="managenovel" element={<NovelManager />} />
+            <Route path="checkout" element={<CheckOut />} />
             <Route path="chat" element={<Chat />} />
           </Route>
 
