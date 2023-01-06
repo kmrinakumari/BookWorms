@@ -110,10 +110,10 @@ const Header = () => {
                 aria-expanded="false"
               >
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  src="profile_bg.jpg"
                   className="rounded-circle"
                   height={30}
-                  alt="Black and White Portrait of a Man"
+                  alt="Portrait of a Man"
                   loading="lazy"
                 />
               </a>
