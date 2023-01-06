@@ -46,8 +46,8 @@ const ManageUser = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Title</th>
-            <th>Author</th>
+            <th>Email</th>
+            <th>Password</th>
             <th>Genre</th>
             <th>Publisher</th>
           </tr>
@@ -56,8 +56,8 @@ const ManageUser = () => {
           {userData.map((user) => (
             <tr>
               <td>{user._id}</td>
-              <td>{user.title}</td>
-              <td>{user.author}</td>
+              <td>{user.email}</td>
+              <td>{user.password}</td>
               <td>{user.genre}</td>
               <td>{user.publisher}</td>
               <td>
