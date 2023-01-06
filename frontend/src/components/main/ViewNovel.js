@@ -40,7 +40,7 @@ const ViewNovel = () => {
                 <p><b>{novelData.sellable}</b></p>
                 <p><i class="fas fa-periscope"></i><b>{novelData.rentPrice}</b></p>
                 <p><i class="fas fa-periscope"></i><b>{novelData.sellPrice}</b></p>
-                <p><i class="fas fa-key"></i><b>{novelData.user.name}</b></p>
+                <p><b>{novelData.user.name}</b></p>
                 <p><b>{novelData.id}</b></p>
               </div>
             </div>
