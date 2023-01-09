@@ -75,7 +75,7 @@ const ViewNovel = () => {
                     <button className="btn btn-primary me-4" onClick={buyNovel}>Buy Now</button>
                   )}
                   {novelData.rentable && (
-                    <button className="btn btn-danger">Rent Now</button>
+                    <button className="btn btn-danger" >Rent Now</button>
                   )}
                 </div>
               </div>

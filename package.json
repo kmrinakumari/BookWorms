@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "framer-motion": "^7.10.2"
+    "framer-motion": "^7.10.2",
+    "mdb-react-ui-kit": "^5.1.0"
   }
 }
