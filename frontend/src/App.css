@@ -29,8 +29,9 @@
 }
 .viewnovel-bg{
   background-image: url('../public/main/viewnovel_bg.jpg');
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 
