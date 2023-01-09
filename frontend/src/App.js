@@ -18,6 +18,7 @@ import ViewNovel from "./components/main/ViewNovel";
 import CheckOut from "./components/user/CheckOut";
 import UserAuth from "./UserAuth";
 import AdminAuth from "./AdminAuth";
+import ManageOrders from "./components/user/ManageOrders";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
             <Route path="pofile" element={<UserProfile />} />
             <Route path="addnovel" element={<AddNovel />} />
             <Route path="managenovel" element={<NovelManager />} />
+            <Route path="manageorders" element={<ManageOrders />} />
             <Route path="checkout" element={<CheckOut />} />
             <Route path="chat" element={<Chat />} />
           </Route>

@@ -113,7 +113,7 @@ const Header = () => {
                   src="profile_bg.jpg"
                   className="rounded-circle"
                   height={30}
-                  alt="Portrait of a Man"
+                  alt="Portrait of a person"
                   loading="lazy"
                 />
               </a>

@@ -112,6 +112,7 @@ const AddNovel = () => {
                   name="title"
                   value={values.title}
                   onChange={handleChange}
+                  required
                 />
                 <p className="mb-3 message">{errors.title}</p>
                 <label>Author</label>
