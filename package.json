@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@stripe/react-stripe-js": "^1.16.2",
     "@stripe/stripe-js": "^1.46.0",
     "framer-motion": "^7.10.2",
     "mdb-react-ui-kit": "^5.1.0"
