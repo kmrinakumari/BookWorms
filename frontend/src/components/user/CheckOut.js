@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
+import { useNavigate } from "react-router-dom";
+import app_config from "../../config";
+import Swal from "sweetalert2";
 
 const CheckOut = () => {
 
   const [novelData, setNovelData] = useState(JSON.parse(sessionStorage.getItem('novel')));
-  console.log(novelData);
+  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')))
+  const url = app_config.apiurl;
+  
+  const [isPaymentLoading, setPaymentLoading] = useState(false);
+
+  const navigate = useNavigate();
+  const stripe = useStripe();
+  const elements = useElements();
 
   const CARD_OPTIONS = {
     iconStyle: "solid",
@@ -35,7 +45,7 @@ const CheckOut = () => {
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: (del_char + selEquipment.price) * 100 }),
+      body: JSON.stringify({ amount: (novelData.selPrice) * 100 }),
     };
     return fetch(url + "/create-payment-intent", requestOptions).then(
       (response) => response.json()
@@ -76,7 +86,7 @@ const CheckOut = () => {
       method: "POST",
       body: JSON.stringify({
         user: currentUser._id,
-        equipment: selEquipment._id,
+        equipment: novelData._id,
         createdAt: new Date(),
         rent: false,
       }),
@@ -148,17 +158,16 @@ const CheckOut = () => {
                 </div>
                 <CardElement className="card" options={CARD_OPTIONS} />
 
-                <Button
+                <button
                   disabled={isPaymentLoading}
                   className="mt-5 w-100"
-                  variant="contained"
-                  color="secondary"
+                  
                   type="submit"
                 >
                   {isPaymentLoading
                     ? "Loading..."
-                    : `Pay ₹${del_char + selEquipment.price}/-`}
-                </Button>
+                    : `Pay ₹${novelData.selPrice}/-`}
+                </button>
               </div>
             </div>
           </div>
