@@ -5,6 +5,10 @@ const novelRouter = require('./routers/novelRouter');
 const utilRouter = require('./routers/util');
 const cors = require('cors');
 
+const stripe_sk =
+  "sk_test_51L1Wf4SG8drK0Wt5r9B58VpCVuppBvRGQciPAEEoKGtMEtRWr9HpGdBK8ulyJuckoVaJcaUSPDeYibVSIi89rGgj006q8dj8ZW";
+const stripe = require("stripe")(stripe_sk);
+
 // initializing express
 const app = express();
 const port = 5000;
@@ -24,13 +28,14 @@ app.get('/', (req, res) => {
     res.send('Response from express');
 });
 
-app.get('/add', (req, res) => {
-    res.send('Response from add');
-})
-
-app.get('/home', (req, res) => {
-    res.send('Response from Home');
-})
+app.post("/create-payment-intent", async (req, res) => {
+    const data = req.body;
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: data.amount,
+      currency: "inr",
+    });
+    res.status(200).json(paymentIntent);
+  });
 
 
 app.listen(port, () => { console.log('express server started on 5000...') });
