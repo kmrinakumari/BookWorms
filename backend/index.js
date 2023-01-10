@@ -6,7 +6,7 @@ const utilRouter = require('./routers/util');
 const cors = require('cors');
 
 const stripe_sk =
-  "sk_test_51L1Wf4SG8drK0Wt5r9B58VpCVuppBvRGQciPAEEoKGtMEtRWr9HpGdBK8ulyJuckoVaJcaUSPDeYibVSIi89rGgj006q8dj8ZW";
+  "sk_test_51MJCFESFzM9nsxSsqqlx3P1nYPbvhbzfnEWOhOlzxwONXSeWcCJ5V2cFJ1D4w0YLPhqu9UcSaCetp9Gv6rBOsE9x00Aenxvr5T";
 const stripe = require("stripe")(stripe_sk);
 
 // initializing express
