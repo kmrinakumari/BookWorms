@@ -19,8 +19,15 @@ import CheckOut from "./components/user/CheckOut";
 import UserAuth from "./UserAuth";
 import AdminAuth from "./AdminAuth";
 import ManageOrders from "./components/user/ManageOrders";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 function App() {
+
+  const stripe = loadStripe(
+    "pk_test_51L1Wf4SG8drK0Wt5fTi5mmAwG39rkyndP4LsZdqBkKgOdoVfDPzkVt8OHKpq94LBqFxWmtLDQZqll91aHQRkk17500YOymPufa"
+  );
+
   return (
     <div>
       <BrowserRouter>
@@ -58,7 +65,11 @@ function App() {
             <Route path="addnovel" element={<AddNovel />} />
             <Route path="managenovel" element={<NovelManager />} />
             <Route path="manageorders" element={<ManageOrders />} />
-            <Route path="checkout" element={<CheckOut />} />
+            <Route path="checkout" element={
+            <Elements stripe={stripe}>
+
+            <CheckOut />} />
+            </Elements>
             <Route path="chat" element={<Chat />} />
           </Route>
         </Routes>
