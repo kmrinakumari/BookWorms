@@ -2,7 +2,7 @@ import React from 'react'
 
 const CheckOut = () => {
   return (
-    <div>
+ 
     <section
   className="p-4 p-md-5"
   style={{
@@ -123,7 +123,7 @@ const CheckOut = () => {
   </div>
   
 </section>
-</div>
+
   )
 }
 
