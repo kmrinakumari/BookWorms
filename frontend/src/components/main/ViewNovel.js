@@ -42,33 +42,14 @@ const ViewNovel = () => {
             <div className="card h-100">
               <div className="card-body ">
                 <h2 className="display-4">{novelData.title}</h2>
-                <p>
-                  <i class="fas fa-pen"></i> <b>{novelData.author}</b>
-                </p>
-                <p>
-                  <b>{new Date(novelData.createAt).toLocaleDateString()}</b>
-                </p>
-                <p>
-                  <b>{novelData.genre}</b>
-                </p>
-                <p>
-                  <b>{novelData.publisher}</b>
-                </p>
-
-                <p>
-                  <i class="fas fa-periscope"></i>
-                  <b>{novelData.rentPrice}</b>
-                </p>
-                <p>
-                  <i class="fas fa-periscope"></i>
-                  <b>{novelData.sellPrice}</b>
-                </p>
-                <p>
-                  <b>{novelData.user.name}</b>
-                </p>
-                <p>
-                  <b>{novelData.id}</b>
-                </p>
+                <p><i class="fas fa-pen"></i> <b>{novelData.author}</b></p>
+                <p><b>{new Date(novelData.createAt).toLocaleDateString()}</b></p>
+                <p><b>{novelData.genre}</b></p>
+                <p><b>{novelData.publisher}</b></p>
+                <p><b><i class="fas fa-rupee-sign"></i></b>&nbsp;{novelData.rentPrice}</p>
+                <p><b><i class="fas fa-rupee-sign"></i></b>&nbsp;{novelData.sellPrice}</p>
+                <p><b>{novelData.user.name}</b></p>
+                <p><b>{novelData.id}</b></p>
 
                 <div className="d-flex">
                   {!novelData.sellable && (
