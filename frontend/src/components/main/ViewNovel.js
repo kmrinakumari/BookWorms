@@ -48,7 +48,7 @@ const ViewNovel = () => {
                 <p><b>{novelData.publisher}</b></p>
                 <p><b><i class="fas fa-rupee-sign"></i></b>&nbsp;{novelData.rentPrice}</p>
                 <p><b><i class="fas fa-rupee-sign"></i></b>&nbsp;{novelData.sellPrice}</p>
-                <p><b>{novelData.user.name}</b></p>
+                {/* <p><b>{novelData.user.name}</b></p> */}
                 <p><b>{novelData.id}</b></p>
 
                 <div className="d-flex">

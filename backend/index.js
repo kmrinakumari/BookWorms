@@ -2,6 +2,7 @@
 const express = require('express');
 const userRouter = require('./routers/userRouter');
 const novelRouter = require('./routers/novelRouter');
+const orderRouter = require('./routers/orderRouter');
 const utilRouter = require('./routers/util');
 const cors = require('cors');
 
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use('/user', userRouter);
 app.use('/novel', novelRouter);
 app.use('/util', utilRouter);
+app.use('/order', orderRouter);
 
 app.use(express.static('./static/uploads'));
 
