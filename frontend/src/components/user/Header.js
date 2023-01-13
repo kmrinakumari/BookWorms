@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import app_config from "../../config";
+import { useUserContext } from "../../context/UserProvider";
 
 const Header = () => {
+  const { loggedin, setLoggedin, logout } = useUserContext();
+  const [currentUser, setCurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem("user"))
+  );
+  const url = app_config.apiurl;
+
   return (
     <>
       {/* Navbar */}
@@ -38,16 +46,20 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/main/signup">
-                  Signup
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/main/login">
-                  Login
-                </NavLink>
-              </li>
+              {loggedin && (
+                <>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/main/signup">
+                      Signup
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/main/login">
+                      Login
+                    </NavLink>
+                  </li>
+                </>
+              )}
               <li className="nav-item">
                 <NavLink className="nav-link" to="/main/browse">
                   Browse
@@ -59,46 +71,6 @@ const Header = () => {
           {/* Collapsible wrapper */}
           {/* Right elements */}
           <div className="d-flex align-items-center">
-            {/* Icon */}
-            <a className="text-reset me-3" href="#">
-              <i className="fas fa-shopping-cart" />
-            </a>
-            {/* Notifications */}
-            <div className="dropdown">
-              <a
-                className="text-reset me-3 dropdown-toggle hidden-arrow"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i className="fas fa-bell" />
-                <span className="badge rounded-pill badge-notification bg-danger">
-                  1
-                </span>
-              </a>
-              <ul
-                className="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Some news
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another news
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </div>
             {/* Avatar */}
             <div className="dropdown">
               <a
@@ -110,10 +82,14 @@ const Header = () => {
                 aria-expanded="false"
               >
                 <img
-                  src="profile_bg.jpg"
+                  src={
+                    currentUser.avatar
+                      ? url + "/" + currentUser.avatar
+                      : "avatar.png"
+                  }
                   className="rounded-circle"
                   height={30}
-                  alt="Portrait of a person"
+                  alt="User Avatar"
                   loading="lazy"
                 />
               </a>
@@ -122,9 +98,9 @@ const Header = () => {
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/user/profile">
                     My profile
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
@@ -132,9 +108,9 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <button onClick={logout} className="dropdown-item" href="#">
                     Logout
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

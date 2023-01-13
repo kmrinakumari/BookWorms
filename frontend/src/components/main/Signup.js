@@ -1,13 +1,15 @@
 import { Formik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Signup = () => {
 
   const navigate = useNavigate();
+
+  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')))
   
   // step-1 : create function for submission
   const userSubmit = async (formdata, { resetForm, setSubmitting }) => {
@@ -54,6 +56,8 @@ const Signup = () => {
     username: Yup.string().min(3, "Too short").max(10, "Too Long").required("Username Required"),
   })
 
+  if (currentUser !== null) return <Navigate to="/user/profile" />;
+  else
   return (
     <motion.div
       initial={{ scale: 0.6, x: "800%", opacity: 0 }}

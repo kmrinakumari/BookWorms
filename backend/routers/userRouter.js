@@ -48,6 +48,15 @@ router.delete('/delete/:id', (req, res) => {
     });
 })
 
+router.put('/update/:id', (req, res) => {
+    Model.findByIdAndUpdate(req.params.id, req.body, {new : true})
+    .then((result) => {
+        res.json(result);
+    }).catch((err) => {
+        res.status(500).json(err);
+    });
+})
+
 router.post("/authenticate", (req, res) => {
     const formdata = req.body;
     Model.findOne({ email: formdata.email, password: formdata.password })

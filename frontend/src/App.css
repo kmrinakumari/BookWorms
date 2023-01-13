@@ -38,6 +38,9 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-
-
+.user-profile-top{
+  background-image: linear-gradient(0deg, #00000058, #00000058), url('../public/user/profile-top.webp');
+  height: 200px;
+  background-size: cover;
+  background-position: bottom;
+}

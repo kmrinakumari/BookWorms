@@ -1,7 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useAdminContext } from "../../context/AdminProvider";
 
 const Header = () => {
+  const { loggedin, setLoggedin, logout } = useAdminContext();
+
   return (
     <>
       {/* Navbar */}
@@ -46,6 +49,11 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/main/login">
                   Login
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/admin/dashboard">
+                  Dashboard
                 </NavLink>
               </li>
             </ul>
@@ -127,9 +135,9 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <button onClick={logout} className="dropdown-item">
                     Logout
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

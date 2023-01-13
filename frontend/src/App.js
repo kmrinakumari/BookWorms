@@ -21,60 +21,77 @@ import AdminAuth from "./AdminAuth";
 import ManageOrders from "./components/user/ManageOrders";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+import UserProvider from "./context/UserProvider";
+import { useState } from "react";
+import AdminProvider from "./context/AdminProvider";
+import Dashboard from "./components/admin/Dashboard";
 
 function App() {
   const stripe = loadStripe(
     "pk_test_51MJCFESFzM9nsxSsupwtB39lFhJbHf7fPlbVVnyPezOli9SUNVnuDm5ixKKhGg5On2nfz3udpKaplEMd0D9canPU00aq5Zv6UH"
   );
 
+  const [currentUser, setCurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem("user"))
+  );
+
+  const [currentAdmin, setCurrentAdmin] = useState(
+    JSON.parse(sessionStorage.getItem("admin"))
+  );
+
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          <Route element={<Navigate to="/main/home" />} path="/" />
-          <Route element={<Main />} path="main">
-            <Route path="login" element={<Login />} />
-            <Route path="signup" element={<Signup />} />
-            <Route path="home" element={<Home />} />
-            <Route path="browse" element={<ListNovel />} />
-            <Route path="view/:id" element={<ViewNovel />} />
-          </Route>
+        <AdminProvider currentUser={currentAdmin}>
+          <UserProvider currentUser={currentUser}>
+            <Routes>
+              <Route element={<Navigate to="/main/home" />} path="/" />
+              <Route element={<Main />} path="main">
+                <Route path="login" element={<Login />} />
+                <Route path="signup" element={<Signup />} />
+                <Route path="home" element={<Home />} />
+                <Route path="browse" element={<ListNovel />} />
+                <Route path="view/:id" element={<ViewNovel />} />
+              </Route>
 
-          <Route
-            element={
-              <AdminAuth>
-                <Admin />
-              </AdminAuth>
-            }
-            path="admin"
-          >
-            <Route path="pofile" element={<AdminProfile />} />
-            <Route path="manageuser" element={<ManageUser />} />
-          </Route>
+              <Route
+                element={
+                  <AdminAuth>
+                    <Admin />
+                  </AdminAuth>
+                }
+                path="admin"
+              >
+                <Route path="pofile" element={<AdminProfile />} />
+                <Route path="manageuser" element={<ManageUser />} />
+                <Route path="dashboard" element={<Dashboard />} />
+              </Route>
 
-          <Route
-            element={
-              <UserAuth>
-                <User />
-              </UserAuth>
-            }
-            path="user"
-          >
-            <Route path="pofile" element={<UserProfile />} />
-            <Route path="addnovel" element={<AddNovel />} />
-            <Route path="managenovel" element={<NovelManager />} />
-            <Route path="manageorders" element={<ManageOrders />} />
-            <Route
-              path="checkout"
-              element={
-                <Elements stripe={stripe}>
-                  <CheckOut />
-                </Elements>
-              }
-            />
-            <Route path="chat" element={<Chat />} />
-          </Route>
-        </Routes>
+              <Route
+                element={
+                  <UserAuth>
+                    <User />
+                  </UserAuth>
+                }
+                path="user"
+              >
+                <Route path="profile" element={<UserProfile />} />
+                <Route path="addnovel" element={<AddNovel />} />
+                <Route path="managenovel" element={<NovelManager />} />
+                <Route path="manageorders" element={<ManageOrders />} />
+                <Route
+                  path="checkout"
+                  element={
+                    <Elements stripe={stripe}>
+                      <CheckOut />
+                    </Elements>
+                  }
+                />
+                <Route path="chat" element={<Chat />} />
+              </Route>
+            </Routes>
+          </UserProvider>
+        </AdminProvider>
       </BrowserRouter>
     </div>
   );
