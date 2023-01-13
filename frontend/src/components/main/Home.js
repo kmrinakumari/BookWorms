@@ -103,9 +103,9 @@ const Home = () => {
                   </div>{" "}
                   <h5 className="fw-bold mb-3">Support 24/7</h5>{" "}
                   <p className="text-muted mb-0">
-                    Laudantium totam quas cumque pariatur at doloremque hic quos
-                    quia eius. Reiciendis optio minus mollitia rerum labore
-                    facilis inventore voluptatem ad, quae quia sint. Ullam.
+                   Get quick customer support by selecting 
+                   your order novels and help centre is now
+                    available in simple language.
                   </p>{" "}
                 </div>{" "}
                 <div className="col-md-4 mb-5 mb-md-0">
@@ -119,9 +119,9 @@ const Home = () => {
                   </div>{" "}
                   <h5 className="fw-bold mb-3">Purchase and Excahnge</h5>{" "}
                   <p className="text-muted mb-0">
-                    Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                    ullam aspernatur odio soluta, quisquam dolore animi mollitia
-                    a omnis praesentium, expedita nobis!
+                    Choose your orders for purchase with their choice
+                    and if you are not satisfied their order then
+                    you can Exchange also!
                   </p>{" "}
                 </div>{" "}
                 <div className="col-md-4 mb-5 mb-md-0">
@@ -135,9 +135,10 @@ const Home = () => {
                   </div>{" "}
                   <h5 className="fw-bold mb-3">Extremely fast</h5>{" "}
                   <p className="text-muted mb-0">
-                    Enim cupiditate, minus nulla dolor cumque iure eveniet
-                    facere ullam beatae hic voluptatibus dolores exercitationem?
-                    Facilis debitis aspernatur amet nisi?
+                    Ensure extremely fast deliery of your
+                    online orders.Get pickup from multiple 
+                    locations.Sign-up.Integrate Sales in a
+                    few clicks.
                   </p>{" "}
                 </div>{" "}
               </div>{" "}
@@ -180,9 +181,9 @@ const Home = () => {
                       {" "}
                       <h2 className="fw-bold mb-4">One-time payment</h2>{" "}
                       <p className="text-muted mb-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. A soluta corporis voluptate ab error quam dolores
-                        doloremque, quae consectetur.
+                       Understand the importance of paying suppliers on
+                       the contractualy-defined due to date,
+                       otherwise known as the invoice maturity date. 
                       </p>{" "}
                       <div className="row mb-3">
                         {" "}
@@ -273,7 +274,7 @@ const Home = () => {
                   <div className="d-flex justify-content-center mb-4">
                     {" "}
                     <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
+                      src="https://www.upwork.com/profile-portraits/c17ZX3uVb7GeZ5M8Gj0W9kBeDD_kYZ49PD_OnNr0htjk9PfUuszECzB3CKH-QgW1hL"
                       className="rounded-circle shadow-1-strong"
                       width={150}
                       height={150}
@@ -281,15 +282,17 @@ const Home = () => {
                       aria-controls="#picker-editor"
                     />{" "}
                   </div>{" "}
-                  <h5 className="mb-3">Maria Smantha</h5>{" "}
+                  <h5 className="mb-3">Jason V.</h5>{" "}
                   <h6 className="text-primary mb-3">Web Developer</h6>{" "}
                   <p className="px-xl-3">
                     {" "}
                     <i className="fas fa-quote-left pe-2" />
                     <span>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quod eos id officiis hic tenetur quae quaerat ad velit ab
-                      hic tenetur.
+                    Jason was incredibly helpful when it came to
+                    customizing our squarespace site to work with
+                    a new homepage mockup. His skills were exactly
+                    what we were looking for and I couldn't be happier
+                    with the results.
                     </span>{" "}
                   </p>{" "}
                   <ul className="list-unstyled d-flex justify-content-center mb-0">
@@ -321,7 +324,7 @@ const Home = () => {
                   <div className="d-flex justify-content-center mb-4">
                     {" "}
                     <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"
+                      src="https://static.toiimg.com/thumb/imgsize-66332,msid-63688980,width-400,resizemode-4/63688980.jpg"
                       className="rounded-circle shadow-1-strong"
                       width={150}
                       height={150}
@@ -329,15 +332,17 @@ const Home = () => {
                       aria-controls="#picker-editor"
                     />{" "}
                   </div>{" "}
-                  <h5 className="mb-3">Lisa Cudrow</h5>{" "}
+                  <h5 className="mb-3">Sudarshan Dheer</h5>{" "}
                   <h6 className="text-primary mb-3">Graphic Designer</h6>{" "}
                   <p className="px-xl-3">
                     {" "}
                     <i className="fas fa-quote-left pe-2" />
                     <span>
-                      Ut enim ad minima veniam, quis nostrum exercitationem
-                      ullam corporis suscipit laboriosam, nisi ut aliquid
-                      commodi.
+                     I believe graphic design is no rocket
+                     science or fluke, its pure simple logic,
+                     but the voice of the logic needs to come
+                     from within.If it has to work it'll work,
+                     If it doesn't it doesn't.
                     </span>{" "}
                   </p>{" "}
                   <ul className="list-unstyled d-flex justify-content-center mb-0">
@@ -369,7 +374,7 @@ const Home = () => {
                   <div className="d-flex justify-content-center mb-4">
                     {" "}
                     <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/220px-A._P._J._Abdul_Kalam.jpg"
                       className="rounded-circle shadow-1-strong"
                       width={150}
                       height={150}
@@ -377,15 +382,16 @@ const Home = () => {
                       aria-controls="#picker-editor"
                     />{" "}
                   </div>{" "}
-                  <h5 className="mb-3">John Smith</h5>{" "}
+                  <h5 className="mb-3">A. P. J. Abdul Kalam</h5>{" "}
                   <h6 className="text-primary mb-3">Novel Lover</h6>{" "}
                   <p className="px-xl-3">
                     {" "}
                     <i className="fas fa-quote-left pe-2" />
                     <span>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium voluptatum deleniti atque
-                      corrupti.
+                    Loving novels written by classic and modern literary giants,
+                    are some of the most inspirational literary quotes ever
+                    written. If you’re a bookworm then you’ll love these
+                    beautiful quotes for book lovers.
                     </span>{" "}
                   </p>{" "}
                   <ul className="list-unstyled d-flex justify-content-center mb-0">
