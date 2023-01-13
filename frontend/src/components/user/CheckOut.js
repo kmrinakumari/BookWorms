@@ -16,6 +16,9 @@ const CheckOut = () => {
   const stripe = useStripe();
   const elements = useElements();
 
+
+  
+
   const CARD_OPTIONS = {
     iconStyle: "solid",
     style: {
@@ -123,7 +126,7 @@ const CheckOut = () => {
         className="p-4 p-md-5"
         style={{
           backgroundImage:
-            "url(https://mdbcdn.b-cdn.net/img/Photos/Others/background3.webp)",
+            "url(https://img.freepik.com/free-vector/isometric-e-commerce-safety-payment_79603-997.jpg?w=2000)",
         }}
       >
         <div className="row d-flex justify-content-center">
@@ -138,11 +141,23 @@ const CheckOut = () => {
 
                 <div className="row">
                   <div className="col-md-6">
-                    <label>Novel Title</label>
-                    <h2 className="mb-3">{novelData.title}</h2>
+                    <label><b>Novel Title</b></label>
+                    <h1 className="mb-3">{novelData.title}</h1>
+                    <label><b>Novel Author</b></label>
+                    <h3 className="mb-3">{novelData.author}</h3>
+                    <label><b>Novel Publisher</b></label>
+                    <h3 className="mb-3">{novelData.publisher}</h3>
+                    <label><b>Novel RentPrice</b></label>
+                    <h3 className="mb-3">{novelData.rentPrice}</h3>
+                    <label><b>Novel SellPrice</b></label>
+                    <h3 className="mb-3">{novelData.sellPrice}</h3>
+                    
                   </div>
                   <div className="col-md-6">
                     {/* img */}
+                    <img src="{novelData.image}"alt=""/>
+                    
+                    
                   </div>
                 </div>
                 
