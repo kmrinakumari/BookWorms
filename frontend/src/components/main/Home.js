@@ -288,7 +288,7 @@ const Home = () => {
                     {" "}
                     <i className="fas fa-quote-left pe-2" />
                     <span>
-                    Jason was INCREDIBLY helpful when it came to
+                    Jason was incredibly helpful when it came to
                     customizing our squarespace site to work with
                     a new homepage mockup. His skills were exactly
                     what we were looking for and I couldn't be happier
