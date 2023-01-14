@@ -8,15 +8,23 @@ const ShowOrder = ({ formdata }) => {
         <h3>Novel Details</h3>
         <hr />
         {/* image */}
+        <img  className="img-fluid w-100"
+            src={url + "/" + formData.image} alt="" />
+            
         <p className="fw-bold m-0">Title</p>
         <h4>{formdata.novel.title}</h4>
         <p className="fw-bold m-0">Author</p>
         <h4>{formdata.novel.author}</h4>
+        <p className="fw-bold m-0">Publisher</p>
+        <h4>{formdata.novel.publisher}</h4>
 
         <h3 className="mt-3">User Details</h3>
         <hr />
         <p className="fw-bold m-0">Username</p>
         <h4>{formdata.user.username}</h4>
+        <h4>{formdata.user.email}</h4>
+        <h4>{formdata.user._id}</h4>
+
       </div>
     </div>
   );

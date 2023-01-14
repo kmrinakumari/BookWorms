@@ -47,11 +47,12 @@ const Footer = () => {
             {/* Content */}
             <h6 className="text-uppercase fw-bold mb-4">
               <i className="fas fa-gem me-3" />
-              Company name
+             DIGIPODIUM
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Digipodium is a plateform which reaches out to its audiences to help them
+             enrich their lives in bigger and better manner through specializations,
+             in the field of I.T. Training Digital Marketing Corporate Events coordination.
             </p>
           </div>
           {/* Grid column */}
@@ -61,22 +62,22 @@ const Footer = () => {
             <h6 className="text-uppercase fw-bold mb-4">Products</h6>
             <p>
               <a href="#!" className="text-reset">
-                Angular
-              </a>
-            </p>
-            <p>
-              <a href="#!" className="text-reset">
                 React
               </a>
             </p>
             <p>
               <a href="#!" className="text-reset">
-                Vue
+               Bootstrap
               </a>
             </p>
             <p>
               <a href="#!" className="text-reset">
-                Laravel
+                Node.Js
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="text-reset">
+                Angular
               </a>
             </p>
           </div>
@@ -112,17 +113,17 @@ const Footer = () => {
             {/* Links */}
             <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
             <p>
-              <i className="fas fa-home me-3" /> New York, NY 10012, US
+              <i className="fas fa-home me-3" /> Hazratganj, Lucknow UP 226001
             </p>
             <p>
               <i className="fas fa-envelope me-3" />
-              info@example.com
+              info@digipodium.com
             </p>
             <p>
-              <i className="fas fa-phone me-3" /> + 01 234 567 88
+              <i className="fas fa-phone me-3" /> +91 9415082377
             </p>
             <p>
-              <i className="fas fa-print me-3" /> + 01 234 567 89
+              <i className="fas fa-print me-3" /> +91 9415014340
             </p>
           </div>
           {/* Grid column */}

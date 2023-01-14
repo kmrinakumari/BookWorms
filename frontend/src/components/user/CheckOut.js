@@ -169,11 +169,13 @@ const CheckOut = () => {
                   </div>
                   <div className="col-md-6">
                     {/* img */}
-                    <img src={url + "/" + novelData.image} alt="" />
+                    <img  className="img-fluid w-100"
+                     src={url + "/" + novelData.image} alt="" />
+                    
                   </div>
                 </div>
 
-                <button onClick={checkoutSubmit}>Buy Now</button>
+                <button className="btn btn-primary" onClick={checkoutSubmit}>Buy Now</button>
               </div>
             </div>
           </div>
@@ -205,5 +207,12 @@ const CheckOut = () => {
     </div>
   );
 };
+
+<div className="manageorder-bg">
+      <div className="container">
+        <h1 className="text-center mb-5">ManageOrders</h1>
+        
+      </div>
+    </div>
 
 export default CheckOut;
