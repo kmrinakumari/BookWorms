@@ -81,12 +81,8 @@ const Login = () => {
                 }) => (
                   <form onSubmit={handleSubmit}>
                     <label>Email</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="email"
-                      value={values.email}
-                      onChange={handleChange}
+                    <input type="text"className="form-control"name="email"value={values.email}
+                    onChange={handleChange}
                     />
                     <p className="mb-3 message">{errors.email}</p>
 
