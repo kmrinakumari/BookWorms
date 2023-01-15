@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import app_config from "../../config";
 
 const ShowOrder = ({ formdata }) => {
+
+  const url = app_config.apiurl;
+
+
   return (
     <div className="card">
       <div className="card-body">
@@ -9,7 +13,7 @@ const ShowOrder = ({ formdata }) => {
         <hr />
         {/* image */}
         <img  className="img-fluid w-100"
-            src={url + "/" + formData.image} alt="" />
+            src={url + "/" + formdata.novel.image} alt="" />
             
         <p className="fw-bold m-0">Title</p>
         <h4>{formdata.novel.title}</h4>
