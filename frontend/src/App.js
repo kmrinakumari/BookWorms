@@ -25,6 +25,7 @@ import UserProvider from "./context/UserProvider";
 import { useState } from "react";
 import AdminProvider from "./context/AdminProvider";
 import Dashboard from "./components/admin/Dashboard";
+import NotFound from "./components/NotFound";
 
 function App() {
   const stripe = loadStripe(
@@ -89,6 +90,7 @@ function App() {
                 />
                 <Route path="chat" element={<Chat />} />
               </Route>
+                <Route path="*" element={<NotFound />} />
             </Routes>
           </UserProvider>
         </AdminProvider>
