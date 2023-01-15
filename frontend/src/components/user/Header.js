@@ -65,6 +65,11 @@ const Header = () => {
                   Browse
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/main/manageorder">
+                 ManageOrders
+                </NavLink>
+              </li>
             </ul>
             {/* Left links */}
           </div>
