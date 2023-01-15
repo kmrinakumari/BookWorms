@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light" 
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary" 
       >
         {/* Container wrapper */}
         <div className="container-fluid">
