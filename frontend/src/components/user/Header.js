@@ -107,11 +107,7 @@ const Header = () => {
                     My profile
                   </NavLink>
                 </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Settings
-                  </a>
-                </li>
+                
                 <li>
                   <button onClick={logout} className="dropdown-item" href="#">
                     Logout

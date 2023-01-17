@@ -47,7 +47,7 @@ const Footer = () => {
             {/* Content */}
             <h6 className="text-uppercase fw-bold mb-4">
               <i className="fas fa-gem me-3" />
-             DIGIPODIUM
+            BOOKWORMS
             </h6>
             <p>
               Digipodium is a plateform which reaches out to its audiences to help them
@@ -113,17 +113,17 @@ const Footer = () => {
             {/* Links */}
             <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
             <p>
-              <i className="fas fa-home me-3" /> Hazratganj, Lucknow UP 226001
+              <i className="fas fa-home me-3" /> Kapoorthala, Lucknow UP 226024
             </p>
             <p>
               <i className="fas fa-envelope me-3" />
-                info@digipodium.com
+                rinaggp@gmail.com
             </p>
             <p>
-              <i className="fas fa-phone me-3" /> +91 9415082377
+              <i className="fas fa-phone me-3" /> +91 7985756123
             </p>
             <p>
-              <i className="fas fa-print me-3" /> +91 9415014340
+              <i className="fas fa-print me-3" /> +91 7309987188
             </p>
           </div>
           {/* Grid column */}
@@ -137,9 +137,9 @@ const Footer = () => {
       className="text-center p-4"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
     >
-      © 2021 Copyright:
+      © 2023 Copyright:
       <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-        MDBootstrap.com
+        Bookworms.com
       </a>
     </div>
     {/* Copyright */}
