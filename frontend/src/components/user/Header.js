@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         {/* Container wrapper */}
-        <div className="container-fluid">
+        <div className="container">
           {/* Toggle button */}
           <button
             className="navbar-toggler"
@@ -33,7 +33,7 @@ const Header = () => {
             {/* Navbar brand */}
             <a className="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg"
+                src="main-logo.png"
                 height={30}
                 alt="Book Logo"
                 loading="lazy"
@@ -66,7 +66,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/main/manageorder">
+                <NavLink className="nav-link" to="/user/manageorders">
                  ManageOrders
                 </NavLink>
               </li>

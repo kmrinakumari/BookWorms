@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -61,11 +61,12 @@ const Login = () => {
         initial={{ scale: 0.6, x: "800%", opacity: 0 }}
         animate={{ scale: 1, x: 0, opacity: 1 }}
         transition={{ duration: 0.5, type: "spring" }}
-        className="login-bg"
+        className="d-flex align-items-center login-bg"
       >
-        <div className="col-md-6 mx-auto pt-5">
-          <div className="card">
-            <div className="card-body">
+        <div className="col-sm-6 col-md-4 col-lg-3 mx-auto">
+          <p className="text-center text-white display-3 fw-bold">Book Worms</p>
+          <div className="card mt-5">
+            <div className="card-body p-5">
               <h3 className="text-center">Login</h3>
               <Formik
                 initialValues={{ email: "", password: "" }}
@@ -81,8 +82,12 @@ const Login = () => {
                 }) => (
                   <form onSubmit={handleSubmit}>
                     <label>Email</label>
-                    <input type="text"className="form-control"name="email"value={values.email}
-                    onChange={handleChange}
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="email"
+                      value={values.email}
+                      onChange={handleChange}
                     />
                     <p className="mb-3 message">{errors.email}</p>
 
@@ -98,7 +103,7 @@ const Login = () => {
                     <button
                       disabled={isSubmitting}
                       type="submit"
-                      className="btn btn-primary mt-5"
+                      className="btn btn-primary mt-5 w-100"
                     >
                       {isSubmitting ? (
                         <span
@@ -115,6 +120,11 @@ const Login = () => {
                 )}
               </Formik>
             </div>
+            <hr />
+            <p className="text-center mb-3">
+              New to BookWorms?&nbsp;
+              <Link to="/main/signup">Sign Up</Link>
+            </p>
           </div>
         </div>
       </motion.div>

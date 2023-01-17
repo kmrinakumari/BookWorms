@@ -5,10 +5,9 @@ const Header = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light" 
-      >
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         {/* Container wrapper */}
-        <div className="container-fluid">
+        <div className="container">
           {/* Toggle button */}
           <button
             className="navbar-toggler"
@@ -26,8 +25,8 @@ const Header = () => {
             {/* Navbar brand */}
             <a className="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg"
-                height={30}
+                src="main-logo.png"
+                height={50}
                 alt="Book Logo"
                 loading="lazy"
               />
@@ -40,18 +39,25 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/main/signup">
-                  Signup
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/main/login">
-                  Login
+                <NavLink className="nav-link" to="/main/aboutus">
+                  AboutUs
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/main/browse">
-                  Browse
+                  Browse Novels
+                </NavLink>
+              </li>
+            </ul>
+            <ul className="navbar-nav mb-2 mb-lg-0">
+              <li className="nav-item me-2">
+                <NavLink className="btn btn-outline-white" to="/main/signup">
+                  Create Account
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="btn btn-outline-white" to="/main/login">
+                  Signin
                 </NavLink>
               </li>
             </ul>
