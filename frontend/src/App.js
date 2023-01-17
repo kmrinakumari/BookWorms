@@ -25,6 +25,8 @@ import UserProvider from "./context/UserProvider";
 import { useState } from "react";
 import AdminProvider from "./context/AdminProvider";
 import Dashboard from "./components/admin/Dashboard";
+import ContactUs from "./components/main/ContactUs";
+import ResetPassword from "./components/main/ResetPassword";
 
 function App() {
   const stripe = loadStripe(
@@ -52,6 +54,7 @@ function App() {
                 <Route path="home" element={<Home />} />
                 <Route path="browse" element={<ListNovel />} />
                 <Route path="view/:id" element={<ViewNovel />} />
+                <Route path="contactus" element={<ContactUs />} />
               </Route>
 
               <Route
@@ -65,6 +68,8 @@ function App() {
                 <Route path="pofile" element={<AdminProfile />} />
                 <Route path="manageuser" element={<ManageUser />} />
                 <Route path="dashboard" element={<Dashboard />} />
+                <Route path="resetpassword" element={<ResetPassword />} />
+
               </Route>
 
               <Route
