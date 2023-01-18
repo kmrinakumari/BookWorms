@@ -10,7 +10,7 @@
 }
 .login-bg{
   background-image: url('../public/main/login_bg.jpg');
-  min-height: 90vh;
+  min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -47,6 +47,12 @@
 .manageorder-bg{
   background-image: url('../public/main/manageorder_bg.jpg');
   min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.chat-bg{
+  background-image: url('../public/main/chat_bg.jpg');
+  min-height: 80vh;
   background-size: cover;
   background-attachment: fixed;
 }

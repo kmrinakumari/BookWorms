@@ -23,9 +23,13 @@ const Chat = () => {
   }
 
   return (
-    
-      <div className="container">
-        <h1 className="text-center">Chat</h1>
+       
+
+    <div className="chat-bg">
+      <div className="col-md-6 mx-auto pt-5">
+        <div className="container">
+          <h1 className="text-center mb-5"><b>Chat</b></h1>
+          
         <div className="msg-area">{displayMessages()}</div>
 
         <div className="input-group mt-4">
@@ -40,6 +44,8 @@ const Chat = () => {
           </button>
         </div>
       </div>
+      </div>
+          </div>
    
   )
 }

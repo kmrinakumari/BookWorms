@@ -46,54 +46,31 @@ const Footer = () => {
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             {/* Content */}
             <h6 className="text-uppercase fw-bold mb-4">
-              <i className="fas fa-gem me-3" />
+            <i class="fa-solid fa-book me-3"></i>
             BOOKWORMS
             </h6>
             <p>
-              Digipodium is a plateform which reaches out to its audiences to help them
-              enrich their lives in bigger and better manner through specializations,
-              in the field of I.T. Training Digital Marketing Corporate Events coordination.
+            Bookworms is a Great app for stories and 
+            books all kinds of stories for
+            readers, romance, billionaire, fan fiction and so on.
+            Download the app now to start enjoying them for
+            Novel Lovers.
             </p>
           </div>
           {/* Grid column */}
-          {/* Grid column */}
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            {/* Links */}
-            <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-            <p>
-              <a href="#!" className="text-reset">
-                React
-              </a>
-            </p>
-            <p>
-              <a href="#!" className="text-reset">
-              Bootstrap
-              </a>
-            </p>
-            <p>
-              <a href="#!" className="text-reset">
-                Node.Js
-              </a>
-            </p>
-            <p>
-              <a href="#!" className="text-reset">
-               Angular
-              </a>
-            </p>
-          </div>
-          {/* Grid column */}
+         
           {/* Grid column */}
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             {/* Links */}
             <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
             <p>
               <a href="#!" className="text-reset">
-                Pricing
+                SignUp
               </a>
             </p>
             <p>
               <a href="#!" className="text-reset">
-                Settings
+                Login
               </a>
             </p>
             <p>
@@ -103,7 +80,7 @@ const Footer = () => {
             </p>
             <p>
               <a href="#!" className="text-reset">
-                Help
+                AboutUs
               </a>
             </p>
           </div>

@@ -63,9 +63,9 @@ const Login = () => {
         transition={{ duration: 0.5, type: "spring" }}
         className="d-flex align-items-center login-bg"
       >
-        <div className="col-sm-6 col-md-4 col-lg-3 mx-auto">
+        <div className="col-sm-6 col-md-3 col-lg-3 mx-auto">
           <p className="text-center text-white display-3 fw-bold">Book Worms</p>
-          <div className="card mt-5">
+          <div className="card mt-4">
             <div className="card-body p-5">
               <h3 className="text-center">Login</h3>
               <Formik
