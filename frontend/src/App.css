@@ -50,3 +50,9 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.manageuser-bg{
+  background-image: url('../public/main/manageuser_bg.webp');
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
