@@ -62,7 +62,7 @@ const ListNovel = () => {
   return (
     <div className="novelmanager-bg">
       <div className="container">
-        <h1 className="text-center mb-5">ManageUser</h1>
+        <h1 className="text-center mb-5"><b><u>Manage User</u></b></h1>
         <div className="row mt-5">{displayNovels()}</div>
       </div>
     </div>

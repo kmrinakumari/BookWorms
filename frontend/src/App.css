@@ -3,7 +3,7 @@
 }
 
 .signup-bg{
-  background-image: url('../public/main/signup_bg.webp');
+  background-image: url('../public/main/signup_bg.jpg');
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -43,12 +43,6 @@
   height: 200px;
   background-size: cover;
   background-position: bottom;
-}
-.manageorder-bg{
-  background-image: url('../public/main/manageorder_bg.jpg');
-  min-height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
 }
 .chat-bg{
   background-image: url('../public/main/chat_bg.jpg');

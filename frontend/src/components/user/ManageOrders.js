@@ -67,9 +67,7 @@ const ManageOrders = () => {
     <div>
       <header className="bg-dark py-5">
         <div className="container">
-          <h1 className="display-3 fw-bold text-white text-center">
-            Manage Order Data
-          </h1>
+          <h1 className="display-3 fw-bold text-white text-center"> Manage Order Data</h1>
         </div>
       </header>
 
