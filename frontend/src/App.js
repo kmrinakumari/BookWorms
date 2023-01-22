@@ -28,6 +28,7 @@ import Dashboard from "./components/admin/Dashboard";
 import ContactUs from "./components/main/ContactUs";
 import ResetPassword from "./components/main/ResetPassword";
 import NotFound from "./components/NotFound";
+import AboutUs from "./components/main/AboutUs";
 
 function App() {
   const stripe = loadStripe(
@@ -56,6 +57,7 @@ function App() {
                 <Route path="browse" element={<ListNovel />} />
                 <Route path="view/:id" element={<ViewNovel />} />
                 <Route path="contactus" element={<ContactUs />} />
+                <Route path="aboutus" element={<AboutUs />} />
               </Route>
 
               <Route

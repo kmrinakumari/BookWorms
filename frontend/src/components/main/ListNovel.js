@@ -45,12 +45,14 @@ const ListNovel = () => {
   // to display users data on screen
   const displayNovels = () => {
     return userData.map((novel) => (
-      <div className="col-md-3">
+      <div className="col-md-3 mt-4">
         <div className="card">
-          <img className="card-img-top" src={url + "/" + novel.image} alt="" />
+          <div className="novel-bg" style={{backgroundImage: `url('${url + "/" + novel.image}')`}}>
+
+          </div>
           <div className="card-body">
             <h3>{novel.title}</h3>
-            <Link className="btn btn-link" to={"/main/view/" + novel._id}>
+            <Link className="btn btn-outline-primary" to={"/main/view/" + novel._id}>
               View More
             </Link>
           </div>
@@ -61,7 +63,7 @@ const ListNovel = () => {
 
   return (
     <div className="novelmanager-bg">
-      <div className="container">
+      <div className="col-md-10 mx-auto">
         <h1 className="text-center mb-5"><b><u>Manage User</u></b></h1>
         <div className="row mt-5">{displayNovels()}</div>
       </div>
