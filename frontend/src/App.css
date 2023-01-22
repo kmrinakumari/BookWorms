@@ -56,11 +56,21 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-
 .novel-bg{
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.contactus-bg{
+  background-image: url('../public/main/contactus_bg.webp');
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.aboutus-bg{
+  background-image: url('../public/main/aboutus_bg.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
 }

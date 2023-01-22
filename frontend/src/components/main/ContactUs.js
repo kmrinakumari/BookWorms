@@ -71,8 +71,8 @@ const ContactUs = () => {
         <div class="card" id="card">
           <div class="card-body">
             <div class="section-title">
-              <h2 class="title">Contact</h2>
-              <p class="paragraphtitle">Contact Us</p>
+              <h2 class="title"><b><u>Contact Us</u></b></h2>
+              
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-6">
@@ -87,7 +87,8 @@ const ContactUs = () => {
                             </i>
                             <h3 class="contactheading">Our Address</h3>
                             <p class="addressparagraph">
-                              A108 Adam Street, New York, NY 535022
+                              Kapoorthala, Lucknow UP
+                    226024
                             </p>
                           </div>
                         </div>
@@ -109,7 +110,7 @@ const ContactUs = () => {
                               Email Us
                             </h3>
                             <p class="addressparagraph">
-                              info@example.com
+                              rinaggp@gmail.com
                               <br />
                               contact@example.com
                             </p>
@@ -133,9 +134,9 @@ const ContactUs = () => {
                               Call Us
                             </h3>
                             <p class="addressparagraph">
-                              +1 5589 55488 55
+                              +91 7985756123
                               <br />
-                              +1 6678 254445 41
+                              +91 7309987188
                             </p>
                           </div>
                         </div>

@@ -99,11 +99,15 @@ const Login = () => {
                       value={values.password}
                       onChange={handleChange}
                     />
-
+                  <p className="text-center mb-3 mt-4">
+                  <input type="checkbox" control="Checkbox defaultChecked"/>
+                   Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Link to="/main/signup"><u>Forgot Password?</u></Link>
+                   </p>
                     <button
                       disabled={isSubmitting}
                       type="submit"
-                      className="btn btn-primary mt-5 w-100"
+                      className="btn btn-primary mt-2 w-100"
                     >
                       {isSubmitting ? (
                         <span
@@ -123,7 +127,7 @@ const Login = () => {
             <hr />
             <p className="text-center mb-3">
               New to BookWorms?&nbsp;
-              <Link to="/main/signup">Sign Up</Link>
+              <Link to="/main/signup"><u>Sign Up</u></Link>
             </p>
           </div>
         </div>
