@@ -65,7 +65,7 @@ const Signup = () => {
       transition={{ duration: 0.5, type: "spring" }}
       className="signup-bg">
         <div className="col-md-6 mx-auto pt-5">
-      <p className="text-center text-white display-3 fw-bold">Book Worms</p>
+      <p className="text-center display-3 fw-bold">Book Worms</p>
       <div className="card">
         <div className="card-body">
           <h3 className="text-center">Signup Here</h3>

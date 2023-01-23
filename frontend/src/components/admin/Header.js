@@ -4,6 +4,10 @@ import { useAdminContext } from "../../context/AdminProvider";
 
 const Header = () => {
   const { loggedin, setLoggedin, logout } = useAdminContext();
+  const [currentAdmin, setCurrentAdmin] = useState(
+    JSON.parse(sessionStorage.getItem("admin"))
+  );
+  const url = app_config.apiurl;
 
   return (
     <>
@@ -113,10 +117,13 @@ const Header = () => {
                 aria-expanded="false"
               >
                 <img
-                  src="profile_bg.jpg"
+                  src={currentAdmin.avatar
+                  ? url + "/" + currentAdmin.avatar
+                    : "avatar.png"
+                  }
                   className="rounded-circle"
                   height={30}
-                  alt="Portrait of a person"
+                  alt="Admi Avatar"
                   loading="lazy"
                 />
               </a>
@@ -125,9 +132,9 @@ const Header = () => {
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/admin/profile">
                     My profile
-                  </a>
+                  </NavLink>
                 </li>
                 
                 <li>
