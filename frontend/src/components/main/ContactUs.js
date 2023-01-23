@@ -87,8 +87,7 @@ const ContactUs = () => {
                             </i>
                             <h3 class="contactheading">Our Address</h3>
                             <p class="addressparagraph">
-                              Kapoorthala, Lucknow UP
-                    226024
+                              Kapoorthala, Lucknow UP 226024
                             </p>
                           </div>
                         </div>
