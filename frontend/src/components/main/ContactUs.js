@@ -66,8 +66,8 @@ const ContactUs = () => {
 
   // });
   return (
-    <section id="contact" class="contact" style={{ marginTop: "4%" }}>
-      <div class="container" data-aos="fade-up">
+    <section id="contact" class=" contact contactus-bg">
+      <div class="container pt-5" data-aos="fade-up">
         <div class="card" id="card">
           <div class="card-body">
             <div class="section-title">
@@ -251,12 +251,14 @@ const ContactUs = () => {
                             helperText={touched.subject ? errors.subject : ""}
                             error={Boolean(errors.subject && touched.subject)}
                           />
-                          <TextareaAutosize
-                            // label="Message"
+                          <TextField
+                            label="Message"
                             placeholder="Message"
                             variant="outlined"
                             className="w-100 mb-4"
                             id="message"
+                            multiline
+                            rows={4}
                             onChange={handleChange}
                             value={values.message}
                             helperText={touched.message ? errors.message : ""}

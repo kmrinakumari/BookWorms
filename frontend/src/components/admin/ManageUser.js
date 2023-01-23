@@ -45,21 +45,19 @@ const ManageUser = () => {
       <table className="table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Genre</th>
-            <th>Publisher</th>
+            <th><b><u>ID</u></b></th>
+            <th><b><u>Email</u></b></th>
+            <th><b><u>Password</u></b></th>
+            
           </tr>
         </thead>
         <tbody>
           {userData.map((user) => (
             <tr>
-              <td>{user._id}</td>
-              <td>{user.email}</td>
-              <td>{user.password}</td>
-              <td>{user.genre}</td>
-              <td>{user.publisher}</td>
+              <td><b>{user._id}</b></td>
+              <td><b>{user.email}</b></td>
+              <td><b>{user.password}</b></td>
+              
               <td>
                 <button
                   onClick={() => {
@@ -82,7 +80,7 @@ const ManageUser = () => {
     <div className="manageuser-bg">
       <div className="col-md-6 mx-auto pt-5">
         <div className="container">
-          <h1 className="text-center mb-5">ManageUser</h1>
+          <h1 className="text-center mb-5"><b><u>ManageUser</u></b></h1>
           {displayUsers()}
         </div>
       </div>
