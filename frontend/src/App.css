@@ -44,6 +44,14 @@
   background-size: cover;
   background-position: bottom;
 }
+
+.admin-profile-top{
+  background-image: linear-gradient(0deg, #00000058, #00000058), url('../public/user/profile-top.webp');
+  height: 200px;
+  background-size: cover;
+  background-position: bottom;
+}
+
 .chat-bg{
   background-image: url('../public/main/chat_bg.jpg');
   min-height: 80vh;

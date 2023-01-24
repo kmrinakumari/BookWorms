@@ -68,7 +68,7 @@ function App() {
                 }
                 path="admin"
               >
-                <Route path="pofile" element={<AdminProfile />} />
+                <Route path="profile" element={<AdminProfile />} />
                 <Route path="manageuser" element={<ManageUser />} />
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="resetpassword" element={<ResetPassword />} />
