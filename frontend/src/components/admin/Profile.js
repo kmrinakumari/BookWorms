@@ -30,7 +30,7 @@ const AdminProfile = () => {
   }, []);
 
   const updateProfile = async (dataToUpdate) => {
-    const res = await fetch(url + "/admin/update/" + currentAdmin._id, {
+    const res = await fetch(url + "/user/update/" + currentAdmin._id, {
       method: "PUT",
       body: JSON.stringify(dataToUpdate),
       headers: {
@@ -40,6 +40,9 @@ const AdminProfile = () => {
     console.log(res.status);
     const data = await res.json();
     console.log(data);
+    sessionStorage.setItem('admin', JSON.stringify(data));
+    setCurrentAdmin(data);
+
   };
 
   const uploadFile = (e) => {

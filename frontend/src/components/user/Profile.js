@@ -40,6 +40,9 @@ const UserProfile = () => {
     console.log(res.status);
     const data = await res.json();
     console.log(data);
+    sessionStorage.setItem('user', JSON.stringify(data));
+    setCurrentUser(data);
+
   };
 
   const uploadFile = (e) => {
